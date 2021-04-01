@@ -1,0 +1,237 @@
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: "Fira Sans", sans-serif;
+        box-sizing: border-box;
+    }
+
+    /*-- Body --*/
+    body {
+        background: #273842;
+        height: fit-content;
+    }
+
+    /*-- Body: Container Div --*/
+    .content-wrapper {
+        max-width: 950px;
+        min-width: 320px;
+        height: 600px;
+        margin: 25px auto;
+
+    }
+
+    /*-- Status Bar --*/
+    .status-bar {
+        max-width: 950px;
+        min-width: 320px;
+        height: 50px;
+        color: white;
+        background: #00796a;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .status-bar .back-button, .status-bar .video-call-button, .status-bar .call-button, .status-bar .ellipsis-button {
+        padding: 15px 10px;
+    }
+
+    .status-bar .back-button i, .status-bar .video-call-button i, .status-bar .call-button i, .status-bar .ellipsis-button i {
+        font-size: 18px;
+
+    }
+
+    .call-button  {
+        -webkit-transform:rotate(-270deg);
+        -moz-transform:rotate(-270deg);
+        -o-transform:rotate(-270deg);
+        transform:rotate(-270deg);
+        ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+        filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    }
+
+    .status-bar .receiver-image {
+        width: 30px;
+        height: 30px;
+        background: #000;
+        border-radius: 50%;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+
+    .status-bar .receiver-image img {
+        width: 100%;
+    }
+
+    .status-bar .user .receiver-name {
+        margin-top: 10px;
+        font-size: 18px;
+        padding-left: 8px;
+    }
+
+    .status-bar .user .user-status {
+        margin-top: -3px;
+        margin-left: 8px;
+        font-size: 11px;
+
+    }
+
+    .status-bar .left-items {
+        display: flex;
+        flex-direction: row;
+
+
+    }
+
+    .status-bar .right-items {
+        display: flex;
+        flex-direction: row;
+        padding-right: 5px;
+
+    }
+
+        /*-- Chatscreen --*/
+    .chatscreen {
+        height: 95%;
+        width: 100%;
+        background: #ede6de;
+        /*padding: 25px;*/
+        box-shadow: 0 3px #ccc;
+    }
+
+    /*-- Chatscreen: Chats Log*/
+    .chat-log {
+        height: 91%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        margin-bottom: 5px;
+    }
+
+
+    /*-- Log: Messages --*/
+    .message {
+        display: flex;
+        flex-basis: fit-content;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 5px;
+    }
+
+    .sent {
+        justify-content: flex-end;
+    }
+
+    .received {
+        justify-content: flex-start;
+    }
+
+    .sent .chat-message {
+        background: #e2ffc7;
+        order: -1;
+        width: fit-content;
+        max-width: 70%;
+    }
+
+
+    .received .chat-message {
+        background: #ffffff;
+        width: fit-content;
+        max-width: 70%;
+    }
+
+    .message .user-image {
+        width: 60px;
+        height: 60px;
+        background: #ccc;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .message .user-image img {
+        width: 100%;
+    }
+
+    .message .chat-message {
+        padding: 10px;
+        margin: 0 10px 0;
+        border-radius: 10px;
+        color: #38472e;
+        font-size: 18px;
+    }
+
+    .chat-info .chat-time {
+        font-size: 10px;
+        text-align: right;
+    }
+
+
+
+    /*-- Input Area --*/
+    .input-area {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        color: #ccc;
+        padding: 0 10px;
+    }
+
+    .input-area .input {
+        flex-basis: 93%;
+        background: #fff;
+        height: 100%;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .input-area .input .smiley {
+        flex-basis: 3%;
+    }
+
+    .input-area .input .smiley i, .input-area .input .attachment i, .input-area .input .camera i {
+        padding: 6px;
+        color: #5b6870;
+        margin-top: 5px;
+        font-size: 18px;
+    }
+
+    .input-area .input .text-input {
+        flex-basis: 89%;
+    }
+
+    .input-area .input .attachment {
+        flex-basis: 3%;
+    }
+
+    .input-area .input .camera {
+        flex-basis: 3%;
+    }
+
+
+    .input-area .input .text-input textarea {
+        width: 100%;
+        background: #fff;
+        height: 30px;
+        border: 1px solid #fff;
+        resize: none;
+        fontsize: 18px;
+        margin-top: 9px;
+        vertical-align: center;
+        color: #5b6870;
+    }
+
+    .input-area .mic-button button {
+        background: #00796a;
+        width: 40px;
+        height:40px;
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        margin: 0 10px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
